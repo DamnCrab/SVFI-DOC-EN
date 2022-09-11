@@ -23,16 +23,6 @@ module.exports = {
 			name: 'theme-color',
 			content: '#11a8cd'
 		}], // 移动浏览器主题颜色
-
-		['meta', {
-			name: 'wwads-cn-verify',
-			content: '6c4b761a28b734fe93831e3fb400ce87'
-		}], // 广告相关，你可以去掉
-		['script', {
-			src: 'https://cdn.wwads.cn/js/makemoney.js',
-			type: 'text/javascript'
-		}], // 广告相关，你可以去掉
-
 		['meta', {
 			name: 'referrer',
 			content: 'no-referrer'
@@ -168,6 +158,42 @@ module.exports = {
 
 	// 插件
 	plugins: [
+		[
+		      'vuepress-plugin-container',
+		      {
+		        type: 'tip',
+		        defaultTitle: {
+		          '/': 'TIP',
+		        },
+		      },
+		],
+		[
+		      'vuepress-plugin-container',
+			  {
+			    type: 'warning',
+			    defaultTitle: {
+			      '/': 'WARNING',
+			    },
+			  },
+		],
+		[
+		      'vuepress-plugin-container',
+			  {
+			    type: 'danger',
+			    defaultTitle: {
+			      '/': 'DANGER',
+			    },
+			  },
+		],
+		[
+		      'vuepress-plugin-container',
+			  {
+			    type: 'note',
+			    defaultTitle: {
+			      '/': 'NOTE',
+			    },
+			  },
+		],
 		// [require('./plugins/love-me'), { // 鼠标点击爱心特效
 		//   color: '#11a8cd', // 爱心颜色，默认随机色
 		//   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
@@ -201,12 +227,6 @@ module.exports = {
 		//   ]
 		// }],
 
-		[
-			'vuepress-plugin-baidu-tongji', // 百度统计
-			{
-				// hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
-			}
-		],
 
 		['one-click-copy', { // 代码块复制按钮
 			copySelector: ['div[class*="language-"] pre',
