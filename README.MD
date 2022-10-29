@@ -4,3 +4,18 @@
 <h2 align="center">SVFI-DOC English Version</h2>
 
 <h5 align="center">SVFI User Documentation</h5>
+
+# Description of Branch
+
+- `master` Main branch with all updates
+- `main` Basic Info Display only, no updates to this branch
+
+# Local Deployment
+In `PowerShell`:
+- `git clone https://github.com/DamnCrab/SVFI-DOC.git`
+- `npm install`
+- `npm run dev`, copy the local url in browser and preview
+
+# How to Contribute?
+- Change `md` files in `docs` folder
+- Save static resources like images in `docs/.vuepress/public/img`, Use `img` to index in `md` files
