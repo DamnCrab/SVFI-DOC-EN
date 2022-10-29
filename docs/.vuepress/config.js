@@ -109,14 +109,58 @@ module.exports = {
     htmlModules,
   },
 
-  // plugin
-  plugins: [
-    // [require('./plugins/love-me'), { // Mouse click love effect
-    // color: '#11a8cd', // heart color, default random color
-    // excludeClassName: 'theme-vdoing-content' // class of the element to be excluded, default empty''
-    // }],
-
-    ['fulltext-search'], // full text search
+	// 插件
+	plugins: [
+		[
+		      'vuepress-plugin-container',
+		      {
+		        type: 'tip',
+		        defaultTitle: {
+		          '/': 'TIP',
+		        },
+		      },
+		],
+		[
+		      'vuepress-plugin-container',
+			  {
+			    type: 'warning',
+			    defaultTitle: {
+			      '/': 'WARNING',
+			    },
+			  },
+		],
+		[
+		      'vuepress-plugin-container',
+			  {
+			    type: 'danger',
+			    defaultTitle: {
+			      '/': 'DANGER',
+			    },
+			  },
+		],
+		[
+		      'vuepress-plugin-container',
+			  {
+			    type: 'note',
+			    defaultTitle: {
+			      '/': 'NOTE',
+			    },
+			  },
+		],
+		// [require('./plugins/love-me'), { // 鼠标点击爱心特效
+		//   color: '#11a8cd', // 爱心颜色，默认随机色
+		//   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+		// }],
+		[
+			'vuepress-plugin-mathjax',
+			{
+				target: 'svg',
+				macros: {
+					'*': '\\times',
+				},
+			},
+		],
+		['fulltext-search'], // 全文搜索
 
     // ['thirdparty-search', { // A search box where third-party search links can be added (the parameters of the original official search box are still available)
     // thirdparty: [ // optional, default []
@@ -136,12 +180,6 @@ module.exports = {
     // ]
     // }],
 
-    [
-      'vuepress-plugin-baidu-tongji', // Baidu statistics
-      {
-        // hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
-      }
-    ],
 
     ['one-click-copy', { // code block copy button
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
