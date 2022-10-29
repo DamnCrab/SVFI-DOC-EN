@@ -13,7 +13,7 @@ features:
   - title: High Quality
     details: Settings with high granularity and tons of options for high quality control 
   - title: Fast Process
-    details: Lots of optimizations to avoid jelly scenes caused by common vfi software, blurred transitions, etc.
+    details: Lots of optimizations to avoid jelly scenes, blurred transitions, etc.
 
 # Article list display mode: detailed By default, display the detailed version of the article list (including author, category, tag, abstract, pagination, etc.) | simple => Display the simplified version of the article list (only title and date) | none Do not display the article list
 postList: none
@@ -82,7 +82,7 @@ data:
   bgColor: '#eaeef1'
   textColor: '#2A3344'
 - name: SVFI Demo
-  desc: The demo version of SVFI, which supports high-quality, highly customized VFI and SR output within 1000 frames
+  desc: The demo version of SVFI, high quality, freely customized VFI and SR output
   link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
   bgColor: '#eaeef1'
   textColor: '#2A3344'

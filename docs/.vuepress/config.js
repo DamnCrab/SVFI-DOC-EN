@@ -30,14 +30,14 @@ module.exports = {
         text: 'Quickstart', link: '/pages/dc46b8', items: [
           { text: 'What is VFI', link: '/pages/88ed7f/' },
           { text: 'What is SR', link: '/pages/681961/' },
-          { text: 'Quick Start for SVFI', link: '/pages/0e988c/' },
-          {
-            text: 'Related articles', link: '/pages/8cc1b5', items: [
-              { text: 'What is encoding, encoder and pixel format', link: '/pages/76d9d4/' },
-              { text: 'What is rendering', link: '/pages/7b7d11/' },
-              { text: 'What is HDR', link: '/pages/89244b/' },
-            ]
-          }
+          { text: 'Quick Start for SVFI', link: '/pages/0e988c/' }
+          // {
+          //   text: 'Related articles', link: '/pages/8cc1b5', items: [
+          //     { text: 'What is encoding, encoder and pixel format', link: '/pages/76d9d4/' },
+          //     { text: 'What is rendering', link: '/pages/7b7d11/' },
+          //     { text: 'What is HDR', link: '/pages/89244b/' },
+          //   ]
+          // }
         ]
       },
       {
@@ -49,7 +49,7 @@ module.exports = {
       { text: 'FAQ', link: '/pages/9cc27d/', items: [
         { text: 'Tips and Presets', link: '/pages/18309a/'},
       ] },
-      { text: 'support', link: '/pages/1b12ed/' },
+      { text: 'Support', link: '/pages/1b12ed/' },
     ],
     sidebarDepth: 2, // sidebar display depth, default 1, maximum 2 (displayed to h3 title)
     logo: '/img/svfi.ico', // navigation bar logo
