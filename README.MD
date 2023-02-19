@@ -8,7 +8,7 @@
 # Description of Branch
 
 - `master` Main branch with all updates
-- `main` Basic Info Display only, no updates to this branch
+- `main` Basic info display only, no updates to this branch
 
 # Local Deployment
 In `PowerShell`:
