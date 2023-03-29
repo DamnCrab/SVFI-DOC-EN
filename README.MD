@@ -19,3 +19,6 @@ In `PowerShell`:
 # How to Contribute?
 - Change `md` files in `docs` folder
 - Save static resources like images in `docs/.vuepress/public/img`, Use `img` to index in `md` files
+
+# Tips
+Remember to check `workflow file` every time before deployment.
